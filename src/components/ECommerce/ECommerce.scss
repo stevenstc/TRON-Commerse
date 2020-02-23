@@ -1,0 +1,25 @@
+.eCommerce-component-container {
+  margin: 30px;
+}
+
+.eCommerce-component-dash {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-image {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.eCommerce-item {
+  padding: 10px;
+  float: left;
+}
+
+.price-buy-container {
+  display: flex;
+  justify-content: space-between;
+}
