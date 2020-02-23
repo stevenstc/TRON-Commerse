@@ -1,0 +1,47 @@
+{
+  "name": "ecommerce-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tronbox.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && npx rimraf docs && npx move-cli build docs",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRON-US/eCommerce-hello-world.git"
+  },
+  "author": "Ujwal Battar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TRON-US/eCommerce-hello-world/issues"
+  },
+  "homepage": "https://github.com/TRON-US/eCommerce-hello-world#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^2.1.8",
+    "sweetalert2": "^8.19.0",
+    "tronweb": "^2.10.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "move-cli": "^1.2.1",
+    "rimraf": "^2.7.1",
+    "solc": "^0.4.26"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
