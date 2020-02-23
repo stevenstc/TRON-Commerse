@@ -1,7 +1,7 @@
 {
-  "name": "ecommerce-hello-world",
+  "name": "Des-eCommerce",
   "version": "1.0.0",
-  "description": "",
+  "description": "Es la aplicacion para vender en la Blockchcain",
   "main": "tronbox.js",
   "directories": {
     "test": "test"
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TRON-US/eCommerce-hello-world.git"
+    "url": "git+https://github.com/stevenstc/DesCommerse.git"
   },
   "author": "Ujwal Battar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TRON-US/eCommerce-hello-world/issues"
+    "url": "https://github.com/stevenstc/DesCommerse/issues"
   },
-  "homepage": "https://github.com/TRON-US/eCommerce-hello-world#readme",
+  "homepage": "https://github.com/stevenstc/DesCommerse#readme",
   "dependencies": {
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
@@ -36,7 +36,7 @@
     "babel-register": "^6.26.0",
     "move-cli": "^1.2.1",
     "rimraf": "^2.7.1",
-    "solc": "^0.4.26"
+    "solc": "^0.5.4"
   },
   "browserslist": [
     ">0.2%",
