@@ -1,8 +1,8 @@
-# eCommerce-hello-world
+# Des-Commerce
 
-## Part I
+## Parte I
 
-#### Pre-requisites:
+#### Pre requisitos:
 
 - Make sure you have Google Chrome Installed. If it is not installed, you can install it form here: [install Chrome](https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=en-GB).
 - Some familiarity with programming, using GitHub, text-editor/IDE and terminal.
