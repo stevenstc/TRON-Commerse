@@ -19,8 +19,8 @@
     "type": "git",
     "url": "git+https://github.com/stevenstc/DesCommerse.git"
   },
-  "author": "Ujwal Battar",
-  "license": "ISC",
+  "author": "Steven CL",
+  "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/stevenstc/DesCommerse/issues"
   },
@@ -28,7 +28,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "^2.1.8",
+    "react-scripts": "^3.4.0",
     "sweetalert2": "^8.19.0",
     "tronweb": "^2.10.1"
   },
@@ -39,7 +39,8 @@
     "gh-pages": "^2.2.0",
     "move-cli": "^1.2.1",
     "rimraf": "^2.7.1",
-    "solc": "^0.5.4"
+    "solc": "^0.5.4",
+    "webpack": "^4.41.6"
   },
   "browserslist": [
     ">0.2%",
