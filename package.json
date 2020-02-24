@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/stevenstc/DesCommerse/issues"
   },
-  "homepage": "https://github.com/stevenstc/DesCommerse#readme",
+  "homepage": "./",
   "dependencies": {
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
