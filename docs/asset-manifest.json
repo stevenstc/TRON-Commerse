@@ -1,14 +1,23 @@
 {
-  "main.css": "/DesCommerse/static/css/main.35c63eaa.chunk.css",
-  "main.js": "/DesCommerse/static/js/main.b828d5c0.chunk.js",
-  "main.js.map": "/DesCommerse/static/js/main.b828d5c0.chunk.js.map",
-  "runtime~main.js": "/DesCommerse/static/js/runtime~main.737f5309.js",
-  "runtime~main.js.map": "/DesCommerse/static/js/runtime~main.737f5309.js.map",
-  "static/js/2.c21727fe.chunk.js": "/DesCommerse/static/js/2.c21727fe.chunk.js",
-  "static/js/2.c21727fe.chunk.js.map": "/DesCommerse/static/js/2.c21727fe.chunk.js.map",
-  "index.html": "/DesCommerse/index.html",
-  "precache-manifest.0a7e515fd089bd46b7f81d8c3c7688c2.js": "/DesCommerse/precache-manifest.0a7e515fd089bd46b7f81d8c3c7688c2.js",
-  "service-worker.js": "/DesCommerse/service-worker.js",
-  "static/css/main.35c63eaa.chunk.css.map": "/DesCommerse/static/css/main.35c63eaa.chunk.css.map",
-  "static/media/TronLinkLogo.png": "/DesCommerse/static/media/TronLinkLogo.d3a8f115.png"
+  "files": {
+    "main.css": "/DesCommerse/static/css/main.e381822e.chunk.css",
+    "main.js": "/DesCommerse/static/js/main.1b7b85b1.chunk.js",
+    "main.js.map": "/DesCommerse/static/js/main.1b7b85b1.chunk.js.map",
+    "runtime-main.js": "/DesCommerse/static/js/runtime-main.2eccdb6d.js",
+    "runtime-main.js.map": "/DesCommerse/static/js/runtime-main.2eccdb6d.js.map",
+    "static/js/2.c2e8c580.chunk.js": "/DesCommerse/static/js/2.c2e8c580.chunk.js",
+    "static/js/2.c2e8c580.chunk.js.map": "/DesCommerse/static/js/2.c2e8c580.chunk.js.map",
+    "index.html": "/DesCommerse/index.html",
+    "precache-manifest.3468aa092ea3d956a3dea48bdee00d86.js": "/DesCommerse/precache-manifest.3468aa092ea3d956a3dea48bdee00d86.js",
+    "service-worker.js": "/DesCommerse/service-worker.js",
+    "static/css/main.e381822e.chunk.css.map": "/DesCommerse/static/css/main.e381822e.chunk.css.map",
+    "static/js/2.c2e8c580.chunk.js.LICENSE.txt": "/DesCommerse/static/js/2.c2e8c580.chunk.js.LICENSE.txt",
+    "static/media/TronLinkLogo.png": "/DesCommerse/static/media/TronLinkLogo.d3a8f115.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2eccdb6d.js",
+    "static/js/2.c2e8c580.chunk.js",
+    "static/css/main.e381822e.chunk.css",
+    "static/js/main.1b7b85b1.chunk.js"
+  ]
 }
