@@ -1,6 +1,7 @@
 {
   "name": "Des-eCommerce",
   "version": "1.0.0",
+  "homepage": "https://stevenstc.github.io/DesCommerse/",
   "description": "Es la aplicacion para vender en la Blockchcain",
   "main": "tronbox.js",
   "directories": {
@@ -10,7 +11,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build && npx rimraf docs && npx move-cli build docs",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages - build"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,6 @@
   "bugs": {
     "url": "https://github.com/stevenstc/DesCommerse/issues"
   },
-  "homepage": "./",
   "dependencies": {
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
@@ -34,6 +36,7 @@
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
+    "gh-pages": "^2.2.0",
     "move-cli": "^1.2.1",
     "rimraf": "^2.7.1",
     "solc": "^0.5.4"
