@@ -1,7 +1,6 @@
 {
   "name": "Des-eCommerce",
   "version": "1.0.0",
-  "homepage": "https://stevenstc.github.io/DesCommerse/",
   "description": "Es la aplicacion para vender en la Blockchcain",
   "main": "tronbox.js",
   "directories": {
@@ -23,6 +22,7 @@
   "bugs": {
     "url": "https://github.com/stevenstc/DesCommerse/issues"
   },
+  "homepage": "https://github.com/stevenstc/DesCommerse/",
   "dependencies": {
     "@babel/core": "7.8.4",
     "@svgr/webpack": "4.3.3",
@@ -86,7 +86,6 @@
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
-    "gh-pages": "^2.2.0",
     "move-cli": "^1.2.1",
     "rimraf": "^2.7.1",
     "solc": "^0.5.4"
