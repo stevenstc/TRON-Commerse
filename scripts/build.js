@@ -209,3 +209,25 @@ function copyPublicFolder() {
     filter: file => file !== paths.appHtml,
   });
 }
+
+
+/*
+
+if ('serviceWorker' in webpack) {
+  window.addEventListener('load', function() {
+    webpack.serviceWorker.register('/service-worker.js');
+  });
+}
+
+// Inside of build.js:
+const {injectManifest} = require('workbox-build');
+
+const swSrc = 'src/sw.js';
+const swDest = 'build/sw.js';
+injectManifest({
+  swSrc,
+  swDest,
+  // Other configuration options...
+}).then(({count, size}) => {
+  console.log(`Generated ${swDest}, which will precache ${count} files, totaling ${size} bytes.`);
+});*/
