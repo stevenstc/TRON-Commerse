@@ -5,11 +5,11 @@ import Utils from "../../utils";
 import eCommerceData from "./eCommerce-data";
 import "./ECommerce.scss";
 
-/// Add your contract address here////////////////////////////////å
+/// La direccion de su contrato acá ///////////////////////////////////
 const contractAddress = "41A03ED915BAAA7C556C0A9624B3130E74162453F4";
 // base85v = "TQaWQWLW8Nz8Nf9qnAxQZLMCNvPQEa81BT"
 // hex = "41A03ED915BAAA7C556C0A9624B3130E74162453F4"
-/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 
 export default class ECommerce extends Component {
   constructor(props) {
@@ -28,6 +28,8 @@ export default class ECommerce extends Component {
     this.startEventListeners = this.startEventListeners.bind(this);
   }
 
+
+
   async componentDidMount() {
     await Utils.setContract(window.tronWeb, contractAddress);
     this.startEventListeners();
@@ -38,7 +40,7 @@ export default class ECommerce extends Component {
 
     if (totalItems >= dataLength) {
       Swal({
-        title: "No more items in data to add.",
+        title: "No hay más items que agregar.",
         type: "error"
       });
       return;
@@ -55,16 +57,16 @@ export default class ECommerce extends Component {
         <div className="price-buy-container">
           <div className="item-price">{item.price} TRX</div>
           <button
-            className="buy-button"
+            className="buy-button btn btn-success"
             onClick={() => this.buyItem(item.id, item.price)}
           >
-            Buy
+            Comprar
           </button>
           <button
-            className="buy-button"
+            className="buy-button btn btn-warning"
             onClick={() => this.checkItem(item.id)}
           >
-            Check
+            verificar
           </button>
         </div>
       </div>
@@ -85,11 +87,11 @@ export default class ECommerce extends Component {
     });
 
     let checkTotal = await Utils.contract.Total().watch((err, { result }) => {
-      if (err) return console.log("Failed to bind event listener", err);
+      if (err) return console.log("falló al escuchar el evento", err);
       if (result) {
         Swal.fire({
-          title: `This contract has ${result.totalItems} items.`,
-          type: "success"
+          title: `este contrato tiene ${result.totalItems} items.`,
+          type: "Exitoso"
         });
         checkTotal.stop();
       }
@@ -104,11 +106,11 @@ export default class ECommerce extends Component {
     let checkAvailability = await Utils.contract
       .Availability()
       .watch((err, { result }) => {
-        if (err) return console.log("Failed to bind event listener", err);
+        if (err) return console.log("falló al escuchar el evento", err);
         if (result) {
           Swal.fire({
-            title: `Available: ${result.available}.`,
-            type: result.available ? "success" : "error"
+            title: `Disponible: ${result.available}.`,
+            type: result.available ? "Exitoso" : "error"
           });
           checkAvailability.stop();
         }
@@ -118,33 +120,33 @@ export default class ECommerce extends Component {
   buyItem(id, price) {
     Utils.contract.buyItem(id).send({
       shouldPollResponse: true,
-      callValue: price * 1000000 // converted to SUN
+      callValue: price * 1000000 // convertir a SUN
     });
   }
 
   startEventListeners() {
     Utils.contract.Purchased().watch((err, { result }) => {
-      if (err) return console.log("Failed to bind event listener", err);
+      if (err) return console.log("falló al escuchar el evento", err);
       if (result) {
         Swal.fire({
-          title: `${result.name} has been purchased for ${result.price}.`,
+          title: `${result.name} ha sido comprador por ${result.price}.`,
           html:
-            `<p>Seller: ${result.seller}</p><p>Buyer: ${result.buyer}</p>`,
-          type: "success"
+            `<p>Vendedor: ${result.seller}</p><p>Comprador: ${result.buyer}</p>`,
+          type: "Completado"
         });
       }
     });
 
     Utils.contract.Added().watch((err, { result }) => {
-      if (err) return console.log("Failed to bind event listener", err);
+      if (err) return console.log("falló al escuchar el evento", err);
       if (result) {
         Swal.fire({
-          title: `${result.name} has been added for ${result.price}.`,
+          title: `${result.name} ha sido añadido por ${result.price}.`,
           html:
-            `<p>Seller: ${result.seller}</p>` +
-            `<p>Added: ${result.exists}</p>` +
-            `<p>Available: ${result.available}</p>`,
-          type: "success"
+            `<p>Vendedor: ${result.seller}</p>` +
+            `<p>Añadido: ${result.exists}</p>` +
+            `<p>Disponible: ${result.available}</p>`,
+          type: "Completado"
         });
       }
     });
@@ -155,9 +157,9 @@ export default class ECommerce extends Component {
     return (
       <div className="eCommerce-component-container">
         <div className="eCommerce-component-dash">
-          <div>Total Items In Store: {totalItems}</div>
-          <button onClick={this.checkItemsTotal}>Total Contract Items</button>
-          <button onClick={this.addItem}>Add Item</button>
+          <div>Total Items en la tienda: {totalItems}</div>
+          <button className="btn btn-primary" onClick={this.checkItemsTotal}>Ver todos los items</button>
+          <button className="btn btn-primary" onClick={this.addItem}>Añadir Item</button>
         </div>
         <div className="eCommerce-item-container">{allItems}</div>
       </div>

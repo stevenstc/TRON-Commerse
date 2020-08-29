@@ -7,9 +7,9 @@ export default class TronLinkInfo extends Component {
     super(props);
 
     this.state = {
-      accountAddress: "account address will show up here",
-      accountBalance: "account balance will show up here",
-      accountBandwidth: "account bandwidth will show up here"
+      accountAddress: "#########################",
+      accountBalance: "#########################",
+      accountBandwidth: "#########################"
     };
   }
 
@@ -59,15 +59,15 @@ export default class TronLinkInfo extends Component {
     const { accountAddress, accountBalance, accountBandwidth } = this.state;
     return (
       <div className="tronLinkInfo-component-container">
-        <div className="account-info-header"> Account Information </div>
+        <div className="account-info-header"> Información de la cuenta </div>
         <div className="account-info-address">
-          Address: <span>{accountAddress}</span>
+          Dirección: <span>{accountAddress}</span>
         </div>
         <div className="account-info-balance">
           Balance: <span>{accountBalance}</span>
         </div>
         <div className="account-info-bandwidth">
-          Bandwidth: <span>{accountBandwidth}</span>
+          Ancho de banda: <span>{accountBandwidth}</span>
         </div>
       </div>
     );
