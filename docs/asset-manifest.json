@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/stevenstc/DesCommerse/static/css/main.e381822e.chunk.css",
-    "main.js": "/stevenstc/DesCommerse/static/js/main.1b7b85b1.chunk.js",
-    "main.js.map": "/stevenstc/DesCommerse/static/js/main.1b7b85b1.chunk.js.map",
-    "runtime-main.js": "/stevenstc/DesCommerse/static/js/runtime-main.18a14163.js",
-    "runtime-main.js.map": "/stevenstc/DesCommerse/static/js/runtime-main.18a14163.js.map",
-    "static/js/2.ed9ee577.chunk.js": "/stevenstc/DesCommerse/static/js/2.ed9ee577.chunk.js",
-    "static/js/2.ed9ee577.chunk.js.map": "/stevenstc/DesCommerse/static/js/2.ed9ee577.chunk.js.map",
-    "index.html": "/stevenstc/DesCommerse/index.html",
-    "precache-manifest.b1eed6abc754df1afa9d01a3f2c2914e.js": "/stevenstc/DesCommerse/precache-manifest.b1eed6abc754df1afa9d01a3f2c2914e.js",
-    "service-worker.js": "/stevenstc/DesCommerse/service-worker.js",
-    "static/css/main.e381822e.chunk.css.map": "/stevenstc/DesCommerse/static/css/main.e381822e.chunk.css.map",
-    "static/js/2.ed9ee577.chunk.js.LICENSE.txt": "/stevenstc/DesCommerse/static/js/2.ed9ee577.chunk.js.LICENSE.txt",
-    "static/media/TronLinkLogo.png": "/stevenstc/DesCommerse/static/media/TronLinkLogo.d3a8f115.png"
+    "main.css": "/comercio/static/css/main.4d69e75b.chunk.css",
+    "main.js": "/comercio/static/js/main.093d7838.chunk.js",
+    "main.js.map": "/comercio/static/js/main.093d7838.chunk.js.map",
+    "runtime-main.js": "/comercio/static/js/runtime-main.e4943dea.js",
+    "runtime-main.js.map": "/comercio/static/js/runtime-main.e4943dea.js.map",
+    "static/js/2.64f88643.chunk.js": "/comercio/static/js/2.64f88643.chunk.js",
+    "static/js/2.64f88643.chunk.js.map": "/comercio/static/js/2.64f88643.chunk.js.map",
+    "index.html": "/comercio/index.html",
+    "precache-manifest.c440fa309e49da0e0c6b25a041d009bc.js": "/comercio/precache-manifest.c440fa309e49da0e0c6b25a041d009bc.js",
+    "service-worker.js": "/comercio/service-worker.js",
+    "static/css/main.4d69e75b.chunk.css.map": "/comercio/static/css/main.4d69e75b.chunk.css.map",
+    "static/js/2.64f88643.chunk.js.LICENSE.txt": "/comercio/static/js/2.64f88643.chunk.js.LICENSE.txt",
+    "static/media/TronLinkLogo.png": "/comercio/static/media/TronLinkLogo.d3a8f115.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.18a14163.js",
-    "static/js/2.ed9ee577.chunk.js",
-    "static/css/main.e381822e.chunk.css",
-    "static/js/main.1b7b85b1.chunk.js"
+    "static/js/runtime-main.e4943dea.js",
+    "static/js/2.64f88643.chunk.js",
+    "static/css/main.4d69e75b.chunk.css",
+    "static/js/main.093d7838.chunk.js"
   ]
 }

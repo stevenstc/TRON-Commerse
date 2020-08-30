@@ -108,36 +108,36 @@ class App extends Component {
       <div>
         <header className="header-container">
           <div className="resource-links-container">
-            <div className="app-title">TRX-Kicks</div>
+            <div className="app-title">TRX-Comercio</div>
             <a
-              className="nav-link"
+              className=""
               href="https://developers.tron.network/docs"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Guides
+              Guías
             </a>
-            &nbsp; &nbsp;
+            &nbsp; - &nbsp;
             <a
-              className="nav-link"
+              className=""
               href="https://developers.tron.network/docs"
               rel="noopener noreferrer"
               target="_blank"
             >
               API Reference
             </a>
-            &nbsp; &nbsp;
+             &nbsp; - &nbsp;
             <a
-              className="nav-link"
+              className=""
               href="https://tronscan.org/#/"
               rel="noopener noreferrer"
               target="_blank"
             >
               TronScan
             </a>
-            &nbsp; &nbsp;
+             &nbsp; - &nbsp;
             <a
-              className="nav-link"
+              className=""
               href="https://tronstation.io/"
               rel="noopener noreferrer"
               target="_blank"
@@ -157,3 +157,4 @@ class App extends Component {
 export default App;
 
 // {tWeb()}
+
