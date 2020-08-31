@@ -51,7 +51,7 @@ contract ECommerce {
 
         totalItems += 1;
 
-        emit Added(items[itemId].id, items[itemId].name, items[itemId].price, items[itemId].seller, items[itemId].available, items[itemId].exists);
+        emit Added(items[itemId].id, items[itemId].name, (items[itemId].price/1000000), items[itemId].seller, items[itemId].available, items[itemId].exists);
         return (true, items[itemId].id, items[itemId].name, items[itemId].price, items[itemId].seller, items[itemId].available);
     }
 
