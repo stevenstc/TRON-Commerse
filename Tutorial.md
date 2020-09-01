@@ -4,20 +4,20 @@
 
 #### Pre requisitos:
 
-- Make sure you have Google Chrome Installed. If it is not installed, you can install it form here: [install Chrome](https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=en-GB).
-- Some familiarity with programming, using GitHub, text-editor/IDE and terminal.
+- Tienes que tener Google Chrome. Si no lo tienes instalado, Puedes instalarlo desde acá: [instalar Chrome](https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=en-GB).
+- Saber un poco de programación, usar GitHub, Editor de texto/IDE y terminal.
 
-#### Overview
+#### Visión General
 
-- In the 1st part of this tutorial we will get an introduction to the dApp we will build along with some tools and the TRON test network: Shasta.
-- We will set up TronWeb, similar to Web3.js, which will be injected through TronLink and will allow us to interact with the protocol.
-- We will create a TronLink account, access some test TRX, and interact with TronLink and the Shasta network via our dApp.
+- En la primer parte de este Tutorial haremos una introducción sobre las DApp, construiremos una con las herremientas dispuestas en este paquete y será usada dentra de la red de pruebas: Shasta, de el protocolo TRON.
+- Veremos como configurar TronWeb, Que es similar a Web3.js, que se inyectara a traves de TronLink Y así todos podran interactuar con el Protocolo.
+- Crearemos una cuenta en TronLink, accederemos a TRX para pruebas e interactuaremos con TronLink y la Shasta network por medio de nuestra DApp.
 
 ### TronLink
 
-- If you do not have TronLink already installed, you will need to install it from the Chrome Web Store: [install TronLink](https://chrome.google.com/webstore/detail/tronlink/ibnejdfjmmkpcnlpebklmnkoeoihofec?hl=en-US).
-- Once you have installed the TronLink extension, you should see it in the top right of your Chrome browser along with any other extensions you may have
-- Click on the extension to set up your account:
+- Si no tienes instalado TronLink, necesitas instalarlo desde Chrome Web Store: [instalar TronLink](https://chrome.google.com/webstore/detail/tronlink/ibnejdfjmmkpcnlpebklmnkoeoihofec?hl=en-US).
+- Una vez instalada la extención de TronLink, deberias verlo en la parte superior derecha de Chrome junto con cualquier otra extensión que pueda tener.
+- Haga click en la extención y configure su cuenta:
 
   1. The TronLink popup will require you to create a password. Be sure to store this password as this is the easiest way to access TronLink. Follow the instructions provided and click on "Continue".
   2. You should see two options here: first to create an account and second to restore an account. Once you have created your wallet, you will be able to restore it in the future by using your unique generated mnemonic or you private key. Both of these should be stored securely and privately as these can grant access to you account to anyone who knows them.
