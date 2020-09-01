@@ -19,30 +19,30 @@
 - Una vez instalada la extención de TronLink, deberias verlo en la parte superior derecha de Chrome junto con cualquier otra extensión que pueda tener.
 - Haga click en la extención y configure su cuenta:
 
-  1. The TronLink popup will require you to create a password. Be sure to store this password as this is the easiest way to access TronLink. Follow the instructions provided and click on "Continue".
-  2. You should see two options here: first to create an account and second to restore an account. Once you have created your wallet, you will be able to restore it in the future by using your unique generated mnemonic or you private key. Both of these should be stored securely and privately as these can grant access to you account to anyone who knows them.
+  1. La ventana emergente de TronLink requerirá que cree una contraseña. Asegúrese de almacenar esta contraseña, ya que es la forma más fácil de acceder a TronLink. Siga las instrucciones proporcionadas y haga clic en "Continuar".
+  2. Debería ver dos opciones aquí: primero para crear una cuenta y segundo para restaurar una cuenta. Una vez que haya creado su billetera, podrá restaurarla en el futuro utilizando su mnemónico generado único o su clave privada. Ambos deben almacenarse de forma segura y privada, ya que pueden otorgar acceso a su cuenta a cualquier persona que los conozca.
   3. Click on "Create account" to create a new account.
-  4. TronLink will prompt you to create an account name. This is an easy way for you to distinguish accounts in your wallet instead of relying on the public key. Click on "Continue" after you have chosen an account name.
-  5. You will be presented with a 12 word mnemonic. This is unique to your account and must be stored securely. Continue after you have stored this mnemonic.
-  6. TronLink will now require you to select the words in your mnemonic in the order they were shown (left to right and top to bottom, the same order it was displayed to you. As a word of caution, if there are repeated words, start over as it may cause some issues).
-  7. And that's it! You have created your TronLink wallet!
+  4. TronLink le pedirá que cree un nombre de cuenta. Esta es una manera fácil de distinguir las cuentas de su billetera en lugar de depender de la clave pública. Haga clic en "Continuar" después de haber elegido un nombre de cuenta.
+  5. Se le presentará un mnemónico de 12 palabras. Esto es exclusivo de su cuenta y debe almacenarse de forma segura. Continúe después de haber almacenado este mnemónico.
+  6. TronLink ahora requerirá que selecciones las palabras en tu mnemónico en el orden en que fueron mostradas (de izquierda a derecha y de arriba a abajo, el mismo orden en que se te mostró. Como advertencia, si hay palabras repetidas, empezar de nuevo, ya que puede causar algunos problemas).
+  7. ¡Y eso es todo! ¡Ha creado su billetera TronLink!
 
-- **Though you wallet exists in your browser, it is not yet on the blockchain network.**
-  1. In order to do so we need to do execute at least one transaction.
-  2. Let us get your wallet on the Shastsa test network by obtaining some test TRX coins from Shasta faucet.
-  3. Navigate to [Shasta Test Network](https://www.trongrid.io/shasta/) to learn more about it and get the test TRX.
-  4. Scroll to the bottom of the page and you should see the prompt to enter you Test wallet address.
-  5. Click on the TronLink extension to view your accounts.
-  6. Click on the settings gear icon at the top right of TronLink. The first options shold say _"Switch node"_. **Mainnet** is the default selection. This is the main TRON network where you can explore and execute real, financially significant transactions after this tutorial!
-  7. If you click on it, you will be able to select **Shasta Testnet** located right below the Mainnet selection. This is the test network provided by TRON for us to become familiar with the blockchain infrastructure and test ideas without any financial risk. After selecting Shasta, exit back to the main screen of TronLink.
-  8. You should also see your account, by name, in TronLink. Clicking here will open a tab that will allow you to switch between accounts, create new accuonts or restore accounts.
-  9. Select and copy the account address below the account name. It will look something like this `TYLDyP6wJUTZ7tzKEDa3Ricicz2kAVtMEc`.
-  10. This public address allows your account to interact with the blockchain. This is how users can send TRX to your account.
-  11. Back on the [Shasta Test Network](https://www.trongrid.io/shasta/) page, paste your account address in the `Test wallet address` and click "Submit".
-  12. you should see "Your request was successfully submitted, please check your wallet." right below the area you posted your account address.
-  13. If you check your account in TronLink, you will see that your account has been sent 10,000 TRX! and you have 5,000 daily bandwidth points (_more on this later_).
-  14. That's it, you are now ready to start interacting with and testing on the Shasta Test Network.
-- You can view the [TronLink code on GitHub](https://github.com/TronLink/TronLink) if you would like to learn more about how it works.
+- **Aunque su billetera existe en su navegador, aún no está en la red blockchain.**
+  1. Para hacerlo, debemos ejecutar al menos una transacción.
+  2. Permítanos obtener su billetera en la red de prueba Shasta obteniendo algunas monedas TRX de prueba de Shasta faucet.
+  3. Navega a [Shasta Test Network](https://www.trongrid.io/shasta/) para obtener más información al respecto y obtener el TRX de prueba.
+  4. Desplácese hasta la parte inferior de la página y debería ver el mensaje para ingresar su dirección de billetera de prueba.
+  5. Haga clic en la extensión TronLink para ver sus cuentas.
+  6. Haga clic en el icono de engranaje de configuración en la parte superior derecha de TronLink. Las primeras opciones deberían decir _"Cambiar node"_. **Mainnet** es la selección predeterminada. Esta es la red TRON principal donde puede explorar y ejecutar, transacciones financieramente significativas después de este tutorial!
+  7. Si hace clic en él, podrá seleccionar **Shasta Testnet** ubicado justo debajo de la selección de Mainnet. Esta es la red de prueba proporcionada por TRON para que nos familiaricemos con la infraestructura de la cadena de bloques y pruebe las ideas sin ningún riesgo financiero. Después de seleccionar Shasta, vuelva a la pantalla principal de TronLink.
+  8. También debería ver su cuenta, por nombre, en TronLink. Al hacer clic aquí, se abrirá una pestaña que le permitirá cambiar entre cuentas, crear nuevas cuentas o restaurar cuentas.
+  9. Seleccione y copie la dirección de la cuenta debajo del nombre de la cuenta. Se verá algo como esto `TB7RTxBPY4eMvKjceXj8SWjVnZCrWr4XvF`.
+  10. Esta dirección pública permite que su cuenta interactúe con la cadena de bloques. Así es como los usuarios pueden enviar TRX a su cuenta.
+  11. De vuelta en el [Shasta Test Network](https://www.trongrid.io/shasta/) página, pegue la dirección de su cuenta en la `Test wallet address` y haga clic en "Submit".
+  12. Deberías ver "Your request was successfully submitted, please check your wallet." justo debajo del área donde publicó la dirección de su cuenta.
+  13. Si revisa su cuenta en TronLink, verá que a su cuenta se le han enviado 10,000 TRX. y tienes 5,000 puntos de ancho de banda diarios (_más sobre esto más tarde_).
+  14. Eso es todo, ahora está listo para comenzar a interactuar y realizar pruebas en la red de prueba Shasta.
+- Puede ver el [TronLink code on GitHub](https://github.com/TronLink/TronLink) si desea obtener más información sobre cómo funciona.
 
 ### NPM
 
