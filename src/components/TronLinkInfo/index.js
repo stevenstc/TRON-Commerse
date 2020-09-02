@@ -46,7 +46,7 @@ export default class TronLinkInfo extends Component {
     });
   }
   //
-  // // The function below will return the account bandwidth as a number
+  // // La funcion aqui abajo muestra el ancho de banda como un numero
   async fetchAccountBandwidth() {
     const accountBandwidth = await window.tronWeb.trx.getBandwidth(); // number
 
@@ -55,8 +55,9 @@ export default class TronLinkInfo extends Component {
     });
   }
 
+
   render() {
-    const { accountAddress, accountBalance, accountBandwidth } = this.state;
+    const { accountAddress, accountBalance, accountBandwidth,} = this.state;
     return (
       <div className="tronLinkInfo-component-container">
         <div className="account-info-header"> Account Information </div>

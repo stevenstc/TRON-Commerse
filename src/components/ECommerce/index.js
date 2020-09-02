@@ -4,9 +4,10 @@ import Swal from "sweetalert2";
 import Utils from "../../utils";
 import eCommerceData from "./eCommerce-data";
 import "./ECommerce.scss";
+//import TronLinkInfo from "../TronLinkInfo";
 
 /// La direccion de su contrato acá ///////////////////////////////////
-const contractAddress = "41A03ED915BAAA7C556C0A9624B3130E74162453F4";
+const contractAddress = "TSe23FmTzJ7UDFfJbAFwWz6DuomHDDFXfq";
 // base85v = "TQaWQWLW8Nz8Nf9qnAxQZLMCNvPQEa81BT"
 // hex = "41A03ED915BAAA7C556C0A9624B3130E74162453F4"
 ///////////////////////////////////////////////////////////////////////
@@ -47,7 +48,7 @@ export default class ECommerce extends Component {
     }
 
     let item = eCommerceData[totalItems];
-    item.price = parseFloat(Math.random() * 10).toFixed(0);
+    item.price = parseFloat(Math.random() * 1000).toFixed(0);
     item.id = totalItems;
 
     allItems.push(
@@ -129,9 +130,9 @@ export default class ECommerce extends Component {
       if (err) return console.log("falló al escuchar el evento", err);
       if (result) {
         Swal.fire({
-          title: `${result.name} ha sido comprador por ${result.price}.`,
+          title: `${result.name} ha sido comprador por ${(result.price/1000000)} TRX.`,
           html:
-            `<p>Vendedor: ${result.seller}</p><p>Comprador: ${result.buyer}</p>`,
+            `<p>Dueño: ${window.tronWeb.address.fromHex(result.seller)}</p><p>Comprador: ${window.tronWeb.address.fromHex(result.buyer)}</p>`,
           type: "Completado"
         });
       }
@@ -141,9 +142,9 @@ export default class ECommerce extends Component {
       if (err) return console.log("falló al escuchar el evento", err);
       if (result) {
         Swal.fire({
-          title: `${result.name} ha sido añadido por ${result.price}.`,
+          title: `${result.name} ha sido añadido por ${(result.price/1000000)} TRX.`,
           html:
-            `<p>Vendedor: ${result.seller}</p>` +
+            `<p>Dueño: ${window.tronWeb.address.fromHex(result.seller)}</p>` +
             `<p>Añadido: ${result.exists}</p>` +
             `<p>Disponible: ${result.available}</p>`,
           type: "Completado"
@@ -158,7 +159,7 @@ export default class ECommerce extends Component {
       <div className="eCommerce-component-container">
         <div className="eCommerce-component-dash">
           <div>Total Items en la tienda: {totalItems}</div>
-          <button className="btn btn-primary" onClick={this.checkItemsTotal}>Ver todos los items</button>
+          <button className="btn btn-primary" onClick={this.checkItemsTotal}>Items en el contrato</button>
           <button className="btn btn-primary" onClick={this.addItem}>Añadir Item</button>
         </div>
         <div className="eCommerce-item-container">{allItems}</div>
