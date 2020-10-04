@@ -132,10 +132,10 @@ this.setState({
 
 #### Resumen
 
-- In this part, we will explore the tools we use to build a smart contract.
-- Smart contracts are essentially an efficient way to execute transparent and conflict-free transactions online without requiring services of third parties and middlemen.
-- We will use a contract-oriented, high-level language for implementing smart contracts called Solidity. You can check out more in-depth information about Solidity in their documentation [here](https://solidity.readthedocs.io/en/v0.4.24/).
-- We will also use [Remix](https://remix.ethereum.org/), a powerful, open source tool that helps you write Solidity contracts straight from the browser. built for Ethereum and written in JavaScript, Remix supports both usage in the browser and locally. Check out the documentation [here](https://remix.readthedocs.io/en/latest/).
+- En esta parte, exploraremos las herramientas que usamos para construir un contrato inteligente.
+- Los contratos inteligentes son esencialmente una forma eficiente de ejecutar transacciones en línea transparentes y libres de conflictos sin requerir servicios de terceros e intermediarios.
+- Usaremos un lenguaje de alto nivel orientado a los contratos para implementar contratos inteligentes llamado Solidez. Puede consultar información más detallada sobre Solidity en su documentación [aquí](https://solidity.readthedocs.io/en/v0.4.24/).
+- También usaremos [Remix](https://remix.ethereum.org/), una poderosa herramienta de código abierto que le ayuda a escribir contratos de Solidity directamente desde el navegador. Construido para Ethereum y escrito en JavaScript, Remix admite tanto el uso en el navegador como localmente. Consulte la documentación [aquí](https://remix.readthedocs.io/en/latest/).
 
 Resources:
 
@@ -146,11 +146,11 @@ Resources:
 - [Solidity Wikipedia](https://en.wikipedia.org/wiki/Solidity)
 - [BlockGeeks Smart Contract article](https://blockgeeks.com/guides/smart-contracts/)
 
-Now that you have acquainted yourself with the tools, let us get started writing our first Smart Contract!
+Ahora que se ha familiarizado con las herramientas, ¡comencemos a escribir nuestro primer contrato inteligente!
 
 ### Remix
 
-#### Introduction
+#### Introducción
 
 - First, navigate to [Remix](https://remix.ethereum.org/).
 - The landing page for Remix will look like this:
