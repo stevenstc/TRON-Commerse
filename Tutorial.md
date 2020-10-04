@@ -21,7 +21,7 @@
 
   1. La ventana emergente de TronLink requerirá que cree una contraseña. Asegúrese de almacenar esta contraseña, ya que es la forma más fácil de acceder a TronLink. Siga las instrucciones proporcionadas y haga clic en "Continuar".
   2. Debería ver dos opciones aquí: primero para crear una cuenta y segundo para restaurar una cuenta. Una vez que haya creado su billetera, podrá restaurarla en el futuro utilizando su mnemónico generado único o su clave privada. Ambos deben almacenarse de forma segura y privada, ya que pueden otorgar acceso a su cuenta a cualquier persona que los conozca.
-  3. Click on "Create account" to create a new account.
+  3. Haga clic en "Crear cuenta" para crear una nueva cuenta.
   4. TronLink le pedirá que cree un nombre de cuenta. Esta es una manera fácil de distinguir las cuentas de su billetera en lugar de depender de la clave pública. Haga clic en "Continuar" después de haber elegido un nombre de cuenta.
   5. Se le presentará un mnemónico de 12 palabras. Esto es exclusivo de su cuenta y debe almacenarse de forma segura. Continúe después de haber almacenado este mnemónico.
   6. TronLink ahora requerirá que selecciones las palabras en tu mnemónico en el orden en que fueron mostradas (de izquierda a derecha y de arriba a abajo, el mismo orden en que se te mostró. Como advertencia, si hay palabras repetidas, empezar de nuevo, ya que puede causar algunos problemas).
@@ -46,57 +46,57 @@
 
 ### NPM
 
-- Make sure you have NPM installed. You can install it by following instructions here: [install NPM](https://www.npmjs.com/get-npm). using NVM (Node Version Manager) is recommended, and directions can be found [here](https://medium.com/@Joachim8675309/installing-node-js-with-nvm-4dc469c977d9).
+- Asegúrese de tener NPM instalado. Puede instalarlo siguiendo las instrucciones aquí: [install NPM](https://www.npmjs.com/get-npm). Utilizando NVM (Node Version Manager) se recomienda, y se pueden encontrar direcciones [aquí](https://medium.com/@Joachim8675309/installing-node-js-with-nvm-4dc469c977d9).
 
 ### TronBox
 
-- TronBox is a tool developed by the TRON team to help you compile and deploy your contracts quickly.
-- Now that you have NPM installed, you can install TronBox globally on your machine by opening up your terminal and entering `npm install -g tronbox`.
+- TronBox es una herramienta desarrollada por el equipo de TRON para ayudarlo a compilar e implementar sus contratos rápidamente.
+- Ahora que tiene NPM instalado, puede instalar TronBox globalmente en su máquina abriendo su terminal e ingresando `npm install -g tronbox`.
 - [TronBox GitHub](https://github.com/tronprotocol/tron-box).
 - [TronBox Documentation](https://developers.tron.network/docs/tron-box-user-guide).
 
-## Let's begin coding your first dApp on Tron!
+## ¡Comencemos a codificar su primera dApp en Tron!
 
-### Set up the Project
+### Configurar el proyecto
 
-1. Download or Clone the skeleton for this guide from [here](https://github.com/TRON-US/eCommerce-hello-world).
-2. From your terminal, `cd` into this newly created directory.
-3. In terminal, run `npm install`.
-4. Open up this project in your favorite IDE/text-editor.
+1. Descargue o clone el esqueleto para esta guía desde [aquí](https://github.com/TRON-US/eCommerce-hello-world).
+2. Desde tu terminal, `cd` en este directorio recién creado.
+3. En la terminal, ejecuta `npm install`.
+4. Abra este proyecto en su IDE / editor de texto favorito.
 
-### Get Familiar with Application
+### Familiarícese con la aplicación
 
-1. Tour
-2. Something
+1. Explore
+2. revise las partes de la aplicación
 
-### Set up dotenv file **IMPORTANT**
+### Configura el archivo dotenv **IMPORTANTE**
 
-1. In the root directory of your project, create a file called `.env`
-2. This file is used to store information you so not want to expose to the world
-3. Open up this file and paste these lines
+1. En el directorio raíz de su proyecto, cree un archivo llamado `.env`
+2. Este archivo se utiliza para almacenar información que no desea exponer al mundo.
+3. Abra este archivo y pegue estas líneas
 
 ```javascript
-PK = "enter or paste your private key here";
+PK = "ingrese o pegue su clave privada aquí";
 ```
 
-3. paste your private key in the `.env` file.
-   1. To get your private key, click on the TronLink extension in Chrome.
-   2. Make sure you are on the "Accounts" tab.
-   3. Click on Export and you should see a pop-up display with your Private Key.
-   4. copy and paste this key in your `.env` file.
-4. Lastly, add `.env` in your `.gitignore` file if you plan on publishing this project on GitHub.
+3. pegue su clave privada en el `.env` archivo.
+   1. Para obtener su clave privada, haga clic en la extensión TronLink en Chrome.
+   2. Asegúrate de estar en la pestaña "Cuentas".
+   3. Haga clic en Exportar y debería ver una ventana emergente con su clave privada.
+   4. copia y pega esta clave en tu `.env` archivo.
+4. Por último, agregue `.env` en tus `.gitignore` file si planeas publicar este proyecto en GitHub.
 
-### Let us see TronLink and TronWeb in action
+### Veamos TronLink y TronWeb en acción
 
-1. Launch the application by running `npm run start` in the terminal.
-2. Your application should now be running in the browser window and look something like this: ![Initial Application](./public/reference-images/initial-application-launch.png)
-3. In the browser, on the top right, you should see the "Account Information" section. This is the first part we will set up.
+1. Inicie la aplicación ejecutando `npm run start` en la terminal.
+2. Su aplicación ahora debería estar ejecutándose en la ventana del navegador y verse así: ![Initial Application](./public/reference-images/initial-application-launch.png)
+3. En el navegador, en la parte superior derecha, debería ver la sección "Información de la cuenta". Esta es la primera parte que configuraremos.
 
-4. In your text-editor, navigate to the ./src/components/TronLinkInfo/index.js file.
-5. Fetch Account Address:
-   - Begin by uncommenting the function call on line 19 in the `componentDidMount` function.
-   - If you go back to the browser, you should now see your account address displaying in Hex format.
-   - If you would like to see this displayed in Base58 format, uncomment lines 29 to 32 and change the `setState` function on line 33 to look like:
+4. En su editor de texto, navegue hasta el archivo ./src/components/TronLinkInfo/index.js.
+5. Obtener dirección de cuenta:
+   - Empiece por descomentar la llamada a la función en la línea 19 en el `componentDidMount` función.
+   - Si vuelve al navegador, ahora debería ver la dirección de su cuenta en formato hexadecimal.
+   - Si desea que esto se muestre en formato Base58, descomente las líneas 29 a 32 y cambie el `setState` función en la línea 33 para parecerse a:
 
 ```javascript
 this.setState({
@@ -104,13 +104,13 @@ this.setState({
 });
 ```
 
-- You should now be able to go to the browser and see your address displayed in ASCii format.
-- You can click on the TronLink extension and verify that the address being displayed in ASCii format is indeed your account address.
+- Ahora debería poder ir al navegador y ver su dirección en formato ASCii.
+- Puede hacer clic en la extensión TronLink y verificar que la dirección que se muestra en formato ASCii sea de hecho la dirección de su cuenta.
 
-4. Fetch Account Balance:
-   - Uncomment the function call on line 20 in the `componentDidMount` function.
-   - In the browser you should now see the balance of your account in SUN.
-   - To view your account balance in TRX, uncomment line 41 and change the `setState` function on line 44 to look like:
+4. Obtener saldo de cuenta:
+   - Descomente la llamada a la función en la línea 20 en la función `componentDidMount`.
+   - En el navegador, ahora debería ver el saldo de su cuenta en SUN.
+   - Para ver el saldo de su cuenta en TRX, quite el comentario de la línea 41 y cambie la función `setState` en la línea 44 para que se vea así:
 
 ```javascript
 this.setState({
@@ -118,19 +118,19 @@ this.setState({
 });
 ```
 
-5. Fetch Account Bandwidth:
-   - Uncomment the function call on line 21 in the `componentDidMount` function.
-   - In the browser, you should now see the bandwidth balance of your account.
-6. Your app should now look something like this:
+5. Obtener ancho de banda de la cuenta:
+   - Descomente la llamada a la función en la línea 21 en la función `componentDidMount`.
+   - En el navegador, ahora debería ver el saldo de ancho de banda de su cuenta.
+6. Su aplicación ahora debería verse así:
    ![Application Setup](./public/reference-images/eCommerce-setup.png)
 
-### Congratulations! You have completed the first part of this guide! In the next part, we will write out smart contract before moving on to connecting our front-end to our smart-contract on the blockchain!
+### ¡Felicidades! ¡Has completado la primera parte de esta guía! En la siguiente parte, escribiremos un contrato inteligente antes de pasar a conectar nuestro front-end a nuestro contrato inteligente en la blockchain.
 
 ---
 
-## Part II
+## Parte II
 
-#### Overview
+#### Resumen
 
 - In this part, we will explore the tools we use to build a smart contract.
 - Smart contracts are essentially an efficient way to execute transparent and conflict-free transactions online without requiring services of third parties and middlemen.
