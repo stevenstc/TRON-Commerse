@@ -47,6 +47,7 @@
 ### NPM
 
 - Asegúrese de tener NPM instalado. Puede instalarlo siguiendo las instrucciones aquí: [install NPM](https://www.npmjs.com/get-npm). Utilizando NVM (Node Version Manager) se recomienda, y se pueden encontrar direcciones [aquí](https://medium.com/@Joachim8675309/installing-node-js-with-nvm-4dc469c977d9).
+- Descargar NPM windows 10 [aquí](https://nodejs.org/es/download/)
 
 ### TronBox
 
@@ -59,32 +60,15 @@
 
 ### Configurar el proyecto
 
-1. Descargue o clone el esqueleto para esta guía desde [aquí](https://github.com/TRON-US/eCommerce-hello-world).
+1. Descargue o clone el esqueleto para esta guía desde [aquí](https://github.com/stevenstc/DesCommerse).
 2. Desde tu terminal, `cd` en este directorio recién creado.
 3. En la terminal, ejecuta `npm install`.
 4. Abra este proyecto en su IDE / editor de texto favorito.
 
 ### Familiarícese con la aplicación
 
-1. Explore
-2. revise las partes de la aplicación
-
-### Configura el archivo dotenv **IMPORTANTE**
-
-1. En el directorio raíz de su proyecto, cree un archivo llamado `.env`
-2. Este archivo se utiliza para almacenar información que no desea exponer al mundo.
-3. Abra este archivo y pegue estas líneas
-
-```javascript
-PK = "ingrese o pegue su clave privada aquí";
-```
-
-3. pegue su clave privada en el `.env` archivo.
-   1. Para obtener su clave privada, haga clic en la extensión TronLink en Chrome.
-   2. Asegúrate de estar en la pestaña "Cuentas".
-   3. Haga clic en Exportar y debería ver una ventana emergente con su clave privada.
-   4. copia y pega esta clave en tu `.env` archivo.
-4. Por último, agregue `.env` en tus `.gitignore` file si planeas publicar este proyecto en GitHub.
+1. Explora
+2. revisa las partes de la aplicación
 
 ### Veamos TronLink y TronWeb en acción
 
