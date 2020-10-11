@@ -1,5 +1,7 @@
 ## TRON DES-COMMERCE
 
+Nota: para visualizar la demo debes activar el nodo de pruebas de la red de TRON llamado Shasta
+
 [Online Demo](https://stevenstc.github.io/comercio/)
 
 Es una Dapp construida en TRON. es un ejemplo de como se podria comprar y vender articulos por internet sin necesidad de tener una tienda online
